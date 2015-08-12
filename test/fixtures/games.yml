@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  number: 1
+  title: MyString
+  weight: 1
+  owner: MyString
+  borrower: MyString
+
+two:
+  number: 1
+  title: MyString
+  weight: 1
+  owner: MyString
+  borrower: MyString

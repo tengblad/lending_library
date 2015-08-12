@@ -1,0 +1,47 @@
+<%= form_for @game, :html => {:class => "pure-form pure-form-stacked #{controller.action_name}_model_name"} do |f| %>
+  <fieldset>
+  <% if @game.errors.any? %>
+    <div id="error_explanation">
+    <h2>
+      <%= pluralize(@game.errors.count, "error") %> prohibited
+      this game from being saved:
+    </h2>
+    <ul>
+      <% @game.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+    <% end %>
+    </ul>
+  </div>
+<% end %>
+
+  <div class="pure-control-group">
+    <%= f.label :number %>
+    <%= f.text_field :number, :placeholder => 'Number' %>
+  </div>
+ 
+  <div class="pure-control-group">
+    <%= f.label :title %>
+    <%= f.text_field :title, :placeholder => 'Title' %>
+  </div>
+
+  <div class="pure-control-group">
+    <%= f.label :weight %>
+    <%= f.text_field :weight, :placeholder => "Weight" %>
+  </div>
+ 
+  <div class="pure-control-group">
+    <%= f.label :owner %>
+    <%= f.text_field :owner, :placeholder => "Owner"  %>
+  
+    <div class="pure-control-group">
+    <%= f.label :borrower %>
+    <%= f.text_field :borrower, :placeholder => "Borrowed by" %>
+  </div>
+  
+  <br>
+
+  <div class="pure-controls">
+    <%= f.submit 'Submit' , :class => 'pure-button pure-button-primary' %>
+  </div>
+  </fieldset>
+<% end %>

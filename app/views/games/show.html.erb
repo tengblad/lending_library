@@ -1,0 +1,22 @@
+<p>
+<strong>Number:</strong>
+<%= @game.number %>
+</p>
+
+<p>
+<strong>Title:</strong>
+<%= @game.title %>
+</p>
+
+<p>
+<strong>Weight:</strong>
+<%= @game.weight %>
+</p>
+
+<p>
+<strong>Owner:</strong>
+<%= @game.owner %>
+</p>
+<%= link_to 'Edit', edit_game_path(@game) %> |
+    <%= link_to 'Back', games_path %>
+

@@ -1,0 +1,38 @@
+<%= render 'grid_top' =%>
+
+<h1>Listing games</h1>
+<%= link_to 'New game', new_game_path, :class => "pure-button pure-button-primary"  %>
+<p>
+<table class="pure-table">
+  <thead>
+      <tr>
+      <th>Number</th>
+      <th>Title</th>
+      <th>Weight</th>
+      <th>Owner</th>
+      <th>Borrowed by</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+
+  <tbody>
+      <% @games.each do |game| %>
+          <tr>
+          <td><%= game.number %></td>
+          <td><%= game.title %></td>
+                    <td><%= game.weight %></td>
+                    <td><%= game.owner %></td>
+                    <td><%= game.borrower %></td>
+                          <td><%= link_to 'Show', game_path(game) %> |
+                        <%= link_to 'Edit', edit_game_path(game) %> |
+                          <%= link_to 'Destroy', game_path(game),
+                                         method: :delete,
+                                         data: { confirm: 'Are you sure?' } %></td>
+                        </tr>
+      <% end %>
+    </tbody>
+  </table>
+  </p>
+</div>
+
+<%= render 'grid_bottom' =%>
