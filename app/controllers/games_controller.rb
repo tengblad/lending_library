@@ -45,6 +45,6 @@ def destroy
 
 private
   def game_params
-    params.require(:game).permit(:number, :title, :weight, :owner, :borrower)
+    params.require(:game).permit(:number, :title, :weight, :owner, :borrower, :borrowed)
   end
 end

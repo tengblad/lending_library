@@ -3,7 +3,7 @@
 <h1>Listing games</h1>
 <%= link_to 'New game', new_game_path, :class => "pure-button pure-button-primary"  %>
 <p>
-<table class="pure-table">
+<table class="pure-table sortable">
   <thead>
       <tr>
       <th>Number</th>
@@ -11,7 +11,7 @@
       <th>Weight</th>
       <th>Owner</th>
       <th>Borrowed by</th>
-      <th>Action</th>
+      <th class="sorttable_nosort">Action</th>
     </tr>
   </thead>
 

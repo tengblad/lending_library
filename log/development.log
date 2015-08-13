@@ -8560,3 +8560,1061 @@ Processing by GamesController#index as HTML
   Rendered games/_grid_bottom.html.erb (0.0ms)
   Rendered games/index.html.erb within layouts/application (5.5ms)
 Completed 200 OK in 34ms (Views: 33.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 192.168.0.35 at 2015-08-13 00:18:37 +0200
+Cannot render console from 192.168.0.35! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 28ms (Views: 26.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/pure-min.self-14a0bf50d79b71bda42dbea54331d1033d51e4bef2b915256faec6a523ae78fb.css?body=1" for 192.168.0.35 at 2015-08-13 00:18:37 +0200
+Cannot render console from 192.168.0.35! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/games" for 192.168.0.35 at 2015-08-13 00:18:38 +0200
+Cannot render console from 192.168.0.35! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GamesController#index as HTML
+  Rendered games/_grid_top.html.erb (0.0ms)
+  [1m[35mGame Load (0.2ms)[0m  SELECT "games".* FROM "games"
+  Rendered games/_grid_bottom.html.erb (0.0ms)
+  Rendered games/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 31ms (Views: 29.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/games/1/edit" for 192.168.0.35 at 2015-08-13 00:18:44 +0200
+Cannot render console from 192.168.0.35! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GamesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGame Load (0.1ms)[0m  [1mSELECT  "games".* FROM "games" WHERE "games"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered games/_grid_top.html.erb (0.0ms)
+  Rendered games/_form.html.erb (3.0ms)
+  Rendered games/_grid_bottom.html.erb (0.0ms)
+  Rendered games/edit.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 32ms (Views: 31.2ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/games/1" for 192.168.0.35 at 2015-08-13 00:18:50 +0200
+Cannot render console from 192.168.0.35! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GamesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZubNpzn8I08WSlpt5cuEzw4qlU5TqsWLfU2VgYYK3H0mVIbPrjhX3+V8d79OmsrkFl4CE2gtBoPZsXIVAyNlYA==", "game"=>{"number"=>"101", "title"=>"Once Upon A Time", "weight"=>"160", "owner"=>"Erik", "borrower"=>"0588"}, "commit"=>"Submit", "id"=>"1"}
+  [1m[35mGame Load (0.1ms)[0m  SELECT  "games".* FROM "games" WHERE "games"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "games" SET "borrower" = ?, "updated_at" = ? WHERE "games"."id" = ?  [["borrower", "0588"], ["updated_at", "2015-08-12 22:18:50.634256"], ["id", 1]]
+  [1m[36m (165.4ms)[0m  [1mcommit transaction[0m
+Redirected to http://192.168.0.3:3000/games/1
+Completed 302 Found in 169ms (ActiveRecord: 165.8ms)
+
+
+Started GET "/games/1" for 192.168.0.35 at 2015-08-13 00:18:51 +0200
+Cannot render console from 192.168.0.35! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GamesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mGame Load (0.1ms)[0m  SELECT  "games".* FROM "games" WHERE "games"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered games/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 96ms (Views: 95.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/games" for 192.168.0.35 at 2015-08-13 00:18:52 +0200
+Cannot render console from 192.168.0.35! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GamesController#index as HTML
+  Rendered games/_grid_top.html.erb (0.0ms)
+  [1m[36mGame Load (0.2ms)[0m  [1mSELECT "games".* FROM "games"[0m
+  Rendered games/_grid_bottom.html.erb (0.0ms)
+  Rendered games/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 29ms (Views: 28.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/games/1/edit" for 192.168.0.35 at 2015-08-13 00:19:05 +0200
+Cannot render console from 192.168.0.35! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GamesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mGame Load (0.1ms)[0m  SELECT  "games".* FROM "games" WHERE "games"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered games/_grid_top.html.erb (0.0ms)
+  Rendered games/_form.html.erb (3.0ms)
+  Rendered games/_grid_bottom.html.erb (0.0ms)
+  Rendered games/edit.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 32ms (Views: 30.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/games" for 192.168.0.35 at 2015-08-13 00:19:07 +0200
+Cannot render console from 192.168.0.35! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GamesController#index as HTML
+  Rendered games/_grid_top.html.erb (0.0ms)
+  [1m[36mGame Load (0.2ms)[0m  [1mSELECT "games".* FROM "games"[0m
+  Rendered games/_grid_bottom.html.erb (0.0ms)
+  Rendered games/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 29ms (Views: 28.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/games/1" for 192.168.0.35 at 2015-08-13 00:19:08 +0200
+Cannot render console from 192.168.0.35! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GamesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mGame Load (0.1ms)[0m  SELECT  "games".* FROM "games" WHERE "games"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered games/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 29ms (Views: 28.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/games/1/edit" for 192.168.0.35 at 2015-08-13 00:22:14 +0200
+Cannot render console from 192.168.0.35! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by GamesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mGame Load (0.1ms)[0m  [1mSELECT  "games".* FROM "games" WHERE "games"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered games/_grid_top.html.erb (0.0ms)
+  Rendered games/_form.html.erb (2.0ms)
+  Rendered games/_grid_bottom.html.erb (0.0ms)
+  Rendered games/edit.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 101ms (Views: 99.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/games/new" for 127.0.0.1 at 2015-08-13 09:01:34 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GamesController#new as HTML
+  Rendered games/_grid_top.html.erb (0.4ms)
+  Rendered games/_form.html.erb (76.5ms)
+  Rendered games/_grid_bottom.html.erb (0.3ms)
+  Rendered games/new.html.erb within layouts/application (160.0ms)
+Completed 500 Internal Server Error in 625ms (ActiveRecord: 0.4ms)
+
+ActionView::Template::Error (Permission denied - /home/tengblad/workspace/rails/lending_library/tmp/cache/assets/development/sprockets/v3.0/8qG4s8noQeocwYEYJrWh-SUfxWpANncMKRzeBrraLiE.cache):
+    2: <html>
+    3: <head>
+    4:   <title>LendingLibrary</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___945813839247065292_42024640'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (12.2ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (26.9ms)
+  Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (13.6ms)
+  Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (49.0ms)
+
+
+Started GET "/games/" for 127.0.0.1 at 2015-08-13 09:01:51 +0200
+Processing by GamesController#index as HTML
+  Rendered games/_grid_top.html.erb (0.1ms)
+  [1m[35mGame Load (0.2ms)[0m  SELECT "games".* FROM "games"
+  Rendered games/_grid_bottom.html.erb (0.0ms)
+  Rendered games/index.html.erb within layouts/application (75.2ms)
+Completed 500 Internal Server Error in 80ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (Permission denied - /home/tengblad/workspace/rails/lending_library/tmp/cache/assets/development/sprockets/v3.0/8qG4s8noQeocwYEYJrWh-SUfxWpANncMKRzeBrraLiE.cache):
+    2: <html>
+    3: <head>
+    4:   <title>LendingLibrary</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___945813839247065292_42024640'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.1ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (20.6ms)
+  Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (11.0ms)
+  Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (23.0ms)
+
+
+Started GET "/games/" for 127.0.0.1 at 2015-08-13 09:02:50 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GamesController#index as HTML
+  Rendered games/_grid_top.html.erb (0.3ms)
+  [1m[35mGame Load (0.2ms)[0m  SELECT "games".* FROM "games"
+  Rendered games/_grid_bottom.html.erb (0.2ms)
+  Rendered games/index.html.erb within layouts/application (54.1ms)
+Completed 500 Internal Server Error in 398ms (ActiveRecord: 0.4ms)
+
+ActionView::Template::Error (Permission denied - /home/tengblad/workspace/rails/lending_library/tmp/cache/assets/development/sprockets/v3.0/8qG4s8noQeocwYEYJrWh-SUfxWpANncMKRzeBrraLiE.cache):
+    2: <html>
+    3: <head>
+    4:   <title>LendingLibrary</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__1115797032047660249_40732580'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.9ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (20.5ms)
+  Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (10.8ms)
+  Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (22.4ms)
+
+
+Started GET "/games/" for 127.0.0.1 at 2015-08-13 09:02:53 +0200
+Processing by GamesController#index as HTML
+  Rendered games/_grid_top.html.erb (0.0ms)
+  [1m[36mGame Load (0.2ms)[0m  [1mSELECT "games".* FROM "games"[0m
+  Rendered games/_grid_bottom.html.erb (0.0ms)
+  Rendered games/index.html.erb within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.2ms)
+
+ActionView::Template::Error (Permission denied - /home/tengblad/workspace/rails/lending_library/tmp/cache/assets/development/sprockets/v3.0/8qG4s8noQeocwYEYJrWh-SUfxWpANncMKRzeBrraLiE.cache):
+    2: <html>
+    3: <head>
+    4:   <title>LendingLibrary</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8: </head>
+  app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb__1115797032047660249_40732580'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.8ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (20.0ms)
+  Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (10.6ms)
+  Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (22.2ms)
+
+
+Started GET "/games/" for 127.0.0.1 at 2015-08-13 09:03:34 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GamesController#index as HTML
+  Rendered games/_grid_top.html.erb (0.3ms)
+  [1m[35mGame Load (0.2ms)[0m  SELECT "games".* FROM "games"
+  Rendered games/_grid_bottom.html.erb (0.2ms)
+  Rendered games/index.html.erb within layouts/application (54.3ms)
+Completed 200 OK in 824ms (Views: 811.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/sorttable.self-a06cc09bf6dd393ffa8552e3343022e4523dc5f7e87dddef93fd0fa9cf7c7776.js?body=1" for 127.0.0.1 at 2015-08-13 09:03:36 +0200
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-13 09:03:36 +0200
+
+
+Started GET "/assets/games.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-13 09:03:36 +0200
+
+
+Started GET "/assets/pure-min.self-14a0bf50d79b71bda42dbea54331d1033d51e4bef2b915256faec6a523ae78fb.css?body=1" for 127.0.0.1 at 2015-08-13 09:03:36 +0200
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-13 09:03:36 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-13 09:03:36 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-08-13 09:03:36 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-13 09:03:36 +0200
+
+
+Started GET "/assets/games.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-13 09:03:36 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-08-13 09:03:36 +0200
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-13 09:03:36 +0200
+
+
+Started GET "/games/new" for 127.0.0.1 at 2015-08-13 09:03:43 +0200
+Processing by GamesController#new as HTML
+  Rendered games/_grid_top.html.erb (0.3ms)
+  Rendered games/_form.html.erb (83.2ms)
+  Rendered games/_grid_bottom.html.erb (0.3ms)
+  Rendered games/new.html.erb within layouts/application (87.1ms)
+Completed 200 OK in 183ms (Views: 181.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/games" for 127.0.0.1 at 2015-08-13 09:03:55 +0200
+Processing by GamesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uLswrtVQkDBtDW00jLuqkLM9pYY0FD6eNQ7Gy1ohLm3e9Tqb0uNkX5oyupaOX9SPjbTHzOSlNNpjpxJGOGBGSQ==", "game"=>{"number"=>"103", "title"=>"Appa", "weight"=>"150", "owner"=>"Clare", "borrower"=>""}, "commit"=>"Submit"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "games" ("number", "title", "weight", "owner", "borrower", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["number", 103], ["title", "Appa"], ["weight", 150], ["owner", "Clare"], ["borrower", ""], ["created_at", "2015-08-13 07:03:55.072665"], ["updated_at", "2015-08-13 07:03:55.072665"]]
+  [1m[36m (155.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:9000/games/2
+Completed 302 Found in 182ms (ActiveRecord: 156.1ms)
+
+
+Started GET "/games/2" for 127.0.0.1 at 2015-08-13 09:03:55 +0200
+Processing by GamesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mGame Load (0.2ms)[0m  SELECT  "games".* FROM "games" WHERE "games"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered games/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 139ms (Views: 44.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2015-08-13 09:03:56 +0200
+Processing by GamesController#index as HTML
+  Rendered games/_grid_top.html.erb (0.0ms)
+  [1m[36mGame Load (0.2ms)[0m  [1mSELECT "games".* FROM "games"[0m
+  Rendered games/_grid_bottom.html.erb (0.0ms)
+  Rendered games/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 34ms (Views: 33.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2015-08-13 09:05:52 +0200
+Processing by GamesController#index as HTML
+  Rendered games/_grid_top.html.erb (0.1ms)
+  [1m[35mGame Load (0.2ms)[0m  SELECT "games".* FROM "games"
+  Rendered games/_grid_bottom.html.erb (0.0ms)
+  Rendered games/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 105ms (Views: 103.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/games.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-13 09:05:53 +0200
+
+
+Started GET "/assets/pure-min.self-14a0bf50d79b71bda42dbea54331d1033d51e4bef2b915256faec6a523ae78fb.css?body=1" for 127.0.0.1 at 2015-08-13 09:05:53 +0200
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-13 09:05:53 +0200
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-13 09:05:53 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-13 09:05:53 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-08-13 09:05:53 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-13 09:05:53 +0200
+
+
+Started GET "/assets/games.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-13 09:05:53 +0200
+
+
+Started GET "/assets/sorttable.self-a06cc09bf6dd393ffa8552e3343022e4523dc5f7e87dddef93fd0fa9cf7c7776.js?body=1" for 127.0.0.1 at 2015-08-13 09:05:53 +0200
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-13 09:05:53 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-08-13 09:05:53 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddBorrowedToGames (20150813070902)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.3ms)[0m  [1mALTER TABLE "games" ADD "borrowed" bool[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150813070902"]]
+  [1m[36m (162.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/games" for 127.0.0.1 at 2015-08-13 09:16:36 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GamesController#index as HTML
+  Rendered games/_grid_top.html.erb (0.0ms)
+  [1m[35mGame Load (0.2ms)[0m  SELECT "games".* FROM "games"
+  Rendered games/_grid_bottom.html.erb (0.0ms)
+  Rendered games/index.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 107ms (Views: 104.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/games.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-13 09:16:36 +0200
+
+
+Started GET "/assets/pure-min.self-14a0bf50d79b71bda42dbea54331d1033d51e4bef2b915256faec6a523ae78fb.css?body=1" for 127.0.0.1 at 2015-08-13 09:16:36 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-13 09:16:36 +0200
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 127.0.0.1 at 2015-08-13 09:16:36 +0200
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-13 09:16:36 +0200
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-13 09:16:36 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-13 09:16:36 +0200
+
+
+Started GET "/assets/games.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-13 09:16:36 +0200
+
+
+Started GET "/assets/sorttable.self-a06cc09bf6dd393ffa8552e3343022e4523dc5f7e87dddef93fd0fa9cf7c7776.js?body=1" for 127.0.0.1 at 2015-08-13 09:16:36 +0200
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-13 09:16:36 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-08-13 09:16:36 +0200
+
+
+Started GET "/games" for 127.0.0.1 at 2015-08-13 09:24:23 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by GamesController#index as HTML
+  Rendered games/_grid_top.html.erb (0.3ms)
+  [1m[35mGame Load (0.2ms)[0m  SELECT "games".* FROM "games"
+  Rendered games/_grid_bottom.html.erb (0.2ms)
+  Rendered games/index.html.erb within layouts/application (55.6ms)
+Completed 200 OK in 510ms (Views: 498.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/games.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-13 09:24:24 +0200
+
+
+Started GET "/assets/pure-min.self-14a0bf50d79b71bda42dbea54331d1033d51e4bef2b915256faec6a523ae78fb.css?body=1" for 127.0.0.1 at 2015-08-13 09:24:24 +0200
+
+
+Started GET "/assets/application.self-9e16717c6f0008320714d140c81dc711543ce3cc9d80c52902d313da968e1010.css?body=1" for 127.0.0.1 at 2015-08-13 09:24:24 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-13 09:24:24 +0200
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-13 09:24:24 +0200
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-13 09:24:24 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-13 09:24:24 +0200
+
+
+Started GET "/assets/games.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-13 09:24:24 +0200
+
+
+Started GET "/assets/sorttable.self-a06cc09bf6dd393ffa8552e3343022e4523dc5f7e87dddef93fd0fa9cf7c7776.js?body=1" for 127.0.0.1 at 2015-08-13 09:24:24 +0200
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-13 09:24:24 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-08-13 09:24:24 +0200
+
+
+Started GET "/games" for 127.0.0.1 at 2015-08-13 09:26:05 +0200
+Processing by GamesController#index as HTML
+  Rendered games/_grid_top.html.erb (0.0ms)
+  [1m[36mGame Load (0.2ms)[0m  [1mSELECT "games".* FROM "games"[0m
+  Rendered games/_grid_bottom.html.erb (0.0ms)
+  Rendered games/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 47ms (Views: 46.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/games.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-13 09:26:05 +0200
+
+
+Started GET "/assets/pure-min.self-14a0bf50d79b71bda42dbea54331d1033d51e4bef2b915256faec6a523ae78fb.css?body=1" for 127.0.0.1 at 2015-08-13 09:26:05 +0200
+
+
+Started GET "/assets/application.self-b38bd405e490a2cd172f8413ed56e8a5218b9d6a5aca188e5b0c096730c92712.css?body=1" for 127.0.0.1 at 2015-08-13 09:26:05 +0200
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-13 09:26:05 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-13 09:26:06 +0200
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-13 09:26:06 +0200
+
+
+Started GET "/assets/games.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-13 09:26:06 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-13 09:26:06 +0200
+
+
+Started GET "/assets/sorttable.self-a06cc09bf6dd393ffa8552e3343022e4523dc5f7e87dddef93fd0fa9cf7c7776.js?body=1" for 127.0.0.1 at 2015-08-13 09:26:06 +0200
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-13 09:26:06 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-08-13 09:26:06 +0200
+
+
+Started GET "/games" for 127.0.0.1 at 2015-08-13 09:38:01 +0200
+Processing by GamesController#index as HTML
+  Rendered games/_grid_top.html.erb (0.4ms)
+  [1m[35mGame Load (0.2ms)[0m  SELECT "games".* FROM "games"
+  Rendered games/_grid_bottom.html.erb (0.3ms)
+  Rendered games/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 37ms (Views: 35.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/games.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-13 09:38:02 +0200
+
+
+Started GET "/assets/pure-min.self-14a0bf50d79b71bda42dbea54331d1033d51e4bef2b915256faec6a523ae78fb.css?body=1" for 127.0.0.1 at 2015-08-13 09:38:02 +0200
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-13 09:38:02 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-13 09:38:02 +0200
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-13 09:38:02 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-13 09:38:02 +0200
+
+
+Started GET "/assets/games.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-13 09:38:02 +0200
+
+
+Started GET "/assets/sorttable.self-a06cc09bf6dd393ffa8552e3343022e4523dc5f7e87dddef93fd0fa9cf7c7776.js?body=1" for 127.0.0.1 at 2015-08-13 09:38:02 +0200
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-13 09:38:02 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-08-13 09:38:02 +0200
+
+
+Started GET "/assets/application.self-b38bd405e490a2cd172f8413ed56e8a5218b9d6a5aca188e5b0c096730c92712.css?body=1" for 127.0.0.1 at 2015-08-13 09:38:02 +0200
+
+
+Started GET "/games" for 127.0.0.1 at 2015-08-13 09:39:54 +0200
+Processing by GamesController#index as HTML
+  Rendered games/_grid_top.html.erb (0.4ms)
+  [1m[36mGame Load (0.3ms)[0m  [1mSELECT "games".* FROM "games"[0m
+  Rendered games/_grid_bottom.html.erb (0.0ms)
+  Rendered games/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 33ms (Views: 31.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/games.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-13 09:39:54 +0200
+
+
+Started GET "/assets/pure-min.self-14a0bf50d79b71bda42dbea54331d1033d51e4bef2b915256faec6a523ae78fb.css?body=1" for 127.0.0.1 at 2015-08-13 09:39:54 +0200
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-13 09:39:54 +0200
+
+
+Started GET "/assets/application.self-b38bd405e490a2cd172f8413ed56e8a5218b9d6a5aca188e5b0c096730c92712.css?body=1" for 127.0.0.1 at 2015-08-13 09:39:54 +0200
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-13 09:39:54 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-13 09:39:54 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-13 09:39:54 +0200
+
+
+Started GET "/assets/games.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-13 09:39:54 +0200
+
+
+Started GET "/assets/sorttable.self-a06cc09bf6dd393ffa8552e3343022e4523dc5f7e87dddef93fd0fa9cf7c7776.js?body=1" for 127.0.0.1 at 2015-08-13 09:39:54 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-08-13 09:39:54 +0200
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-13 09:39:54 +0200
+
+
+Started GET "/games/new" for 127.0.0.1 at 2015-08-13 09:39:59 +0200
+Processing by GamesController#new as HTML
+  Rendered games/_grid_top.html.erb (0.3ms)
+  Rendered games/_form.html.erb (81.7ms)
+  Rendered games/_grid_bottom.html.erb (0.3ms)
+  Rendered games/new.html.erb within layouts/application (85.3ms)
+Completed 200 OK in 115ms (Views: 114.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2015-08-13 09:40:01 +0200
+Processing by GamesController#index as HTML
+  Rendered games/_grid_top.html.erb (0.0ms)
+  [1m[35mGame Load (0.2ms)[0m  SELECT "games".* FROM "games"
+  Rendered games/_grid_bottom.html.erb (0.0ms)
+  Rendered games/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 111ms (Views: 110.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2015-08-13 09:40:15 +0200
+Processing by GamesController#index as HTML
+  Rendered games/_grid_top.html.erb (0.0ms)
+  [1m[36mGame Load (0.2ms)[0m  [1mSELECT "games".* FROM "games"[0m
+  Rendered games/_grid_bottom.html.erb (0.0ms)
+  Rendered games/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 31ms (Views: 29.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/games.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-13 09:40:15 +0200
+
+
+Started GET "/assets/pure-min.self-14a0bf50d79b71bda42dbea54331d1033d51e4bef2b915256faec6a523ae78fb.css?body=1" for 127.0.0.1 at 2015-08-13 09:40:15 +0200
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-13 09:40:15 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-13 09:40:15 +0200
+
+
+Started GET "/assets/application.self-b38bd405e490a2cd172f8413ed56e8a5218b9d6a5aca188e5b0c096730c92712.css?body=1" for 127.0.0.1 at 2015-08-13 09:40:15 +0200
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-13 09:40:15 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-13 09:40:15 +0200
+
+
+Started GET "/assets/games.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-13 09:40:15 +0200
+
+
+Started GET "/assets/sorttable.self-a06cc09bf6dd393ffa8552e3343022e4523dc5f7e87dddef93fd0fa9cf7c7776.js?body=1" for 127.0.0.1 at 2015-08-13 09:40:15 +0200
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-13 09:40:16 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-08-13 09:40:16 +0200
+
+
+Started GET "/games/new" for 127.0.0.1 at 2015-08-13 09:40:24 +0200
+Processing by GamesController#new as HTML
+  Rendered games/_grid_top.html.erb (0.0ms)
+  Rendered games/_form.html.erb (2.9ms)
+  Rendered games/_grid_bottom.html.erb (0.0ms)
+  Rendered games/new.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 34ms (Views: 33.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2015-08-13 09:40:25 +0200
+Processing by GamesController#index as HTML
+  Rendered games/_grid_top.html.erb (0.0ms)
+  [1m[35mGame Load (0.2ms)[0m  SELECT "games".* FROM "games"
+  Rendered games/_grid_bottom.html.erb (0.0ms)
+  Rendered games/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 100ms (Views: 99.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/games" for 127.0.0.1 at 2015-08-13 09:40:30 +0200
+Processing by GamesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VSMBth1ghoXQuByDTQ+mlcFa18KFJkdQPZAydY4s6iYzbQuDGtNy6ieHyyFP69iK/9O1iFWXTRRrOeb47G2CAg==", "game"=>{"number"=>"", "title"=>"", "weight"=>"", "owner"=>"", "borrower"=>""}, "commit"=>"Submit"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "games" ("title", "owner", "borrower", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", ""], ["owner", ""], ["borrower", ""], ["created_at", "2015-08-13 07:40:30.746972"], ["updated_at", "2015-08-13 07:40:30.746972"]]
+  [1m[36m (185.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:9000/games/3
+Completed 302 Found in 193ms (ActiveRecord: 185.6ms)
+
+
+Started GET "/games/3" for 127.0.0.1 at 2015-08-13 09:40:31 +0200
+Processing by GamesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mGame Load (0.2ms)[0m  SELECT  "games".* FROM "games" WHERE "games"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered games/show.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 101ms (Views: 28.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2015-08-13 09:40:32 +0200
+Processing by GamesController#index as HTML
+  Rendered games/_grid_top.html.erb (0.0ms)
+  [1m[36mGame Load (0.2ms)[0m  [1mSELECT "games".* FROM "games"[0m
+  Rendered games/_grid_bottom.html.erb (0.0ms)
+  Rendered games/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 31ms (Views: 30.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2015-08-13 09:40:33 +0200
+Processing by GamesController#index as HTML
+  Rendered games/_grid_top.html.erb (0.0ms)
+  [1m[35mGame Load (0.2ms)[0m  SELECT "games".* FROM "games"
+  Rendered games/_grid_bottom.html.erb (0.0ms)
+  Rendered games/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 98ms (Views: 96.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/games.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-13 09:40:33 +0200
+
+
+Started GET "/assets/pure-min.self-14a0bf50d79b71bda42dbea54331d1033d51e4bef2b915256faec6a523ae78fb.css?body=1" for 127.0.0.1 at 2015-08-13 09:40:33 +0200
+
+
+Started GET "/assets/application.self-b38bd405e490a2cd172f8413ed56e8a5218b9d6a5aca188e5b0c096730c92712.css?body=1" for 127.0.0.1 at 2015-08-13 09:40:33 +0200
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-13 09:40:33 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-13 09:40:33 +0200
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-13 09:40:33 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-13 09:40:33 +0200
+
+
+Started GET "/assets/games.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-13 09:40:33 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-08-13 09:40:33 +0200
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-13 09:40:33 +0200
+
+
+Started GET "/assets/sorttable.self-a06cc09bf6dd393ffa8552e3343022e4523dc5f7e87dddef93fd0fa9cf7c7776.js?body=1" for 127.0.0.1 at 2015-08-13 09:40:33 +0200
+
+
+Started GET "/games/new" for 127.0.0.1 at 2015-08-13 09:40:38 +0200
+Processing by GamesController#new as HTML
+  Rendered games/_grid_top.html.erb (0.0ms)
+  Rendered games/_form.html.erb (2.0ms)
+  Rendered games/_grid_bottom.html.erb (0.0ms)
+  Rendered games/new.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 32ms (Views: 31.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/games" for 127.0.0.1 at 2015-08-13 09:40:41 +0200
+Processing by GamesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Et7EeeXr0sx64pdtWPJwJnFIqSWVvU1cJdv10URXuw50kM5M4lgmo43dQM9aFg45T8HLb0UMRxhzciFcJhbTKg==", "game"=>{"number"=>"", "title"=>"", "weight"=>"", "owner"=>"", "borrower"=>""}, "commit"=>"Submit"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "games" ("title", "owner", "borrower", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["title", ""], ["owner", ""], ["borrower", ""], ["created_at", "2015-08-13 07:40:41.658260"], ["updated_at", "2015-08-13 07:40:41.658260"]]
+  [1m[36m (176.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:9000/games/4
+Completed 302 Found in 180ms (ActiveRecord: 176.5ms)
+
+
+Started GET "/games/4" for 127.0.0.1 at 2015-08-13 09:40:41 +0200
+Processing by GamesController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mGame Load (0.1ms)[0m  SELECT  "games".* FROM "games" WHERE "games"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered games/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 29ms (Views: 27.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2015-08-13 09:40:44 +0200
+Processing by GamesController#index as HTML
+  Rendered games/_grid_top.html.erb (0.0ms)
+  [1m[36mGame Load (0.2ms)[0m  [1mSELECT "games".* FROM "games"[0m
+  Rendered games/_grid_bottom.html.erb (0.0ms)
+  Rendered games/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 102ms (Views: 101.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2015-08-13 09:40:54 +0200
+Processing by GamesController#index as HTML
+  Rendered games/_grid_top.html.erb (0.0ms)
+  [1m[35mGame Load (0.2ms)[0m  SELECT "games".* FROM "games"
+  Rendered games/_grid_bottom.html.erb (0.0ms)
+  Rendered games/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 33ms (Views: 32.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/games.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-13 09:40:54 +0200
+
+
+Started GET "/assets/pure-min.self-14a0bf50d79b71bda42dbea54331d1033d51e4bef2b915256faec6a523ae78fb.css?body=1" for 127.0.0.1 at 2015-08-13 09:40:54 +0200
+
+
+Started GET "/assets/application.self-b38bd405e490a2cd172f8413ed56e8a5218b9d6a5aca188e5b0c096730c92712.css?body=1" for 127.0.0.1 at 2015-08-13 09:40:54 +0200
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-13 09:40:54 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-13 09:40:54 +0200
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-13 09:40:54 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-13 09:40:54 +0200
+
+
+Started GET "/assets/games.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-13 09:40:54 +0200
+
+
+Started GET "/assets/sorttable.self-a06cc09bf6dd393ffa8552e3343022e4523dc5f7e87dddef93fd0fa9cf7c7776.js?body=1" for 127.0.0.1 at 2015-08-13 09:40:54 +0200
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-13 09:40:54 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-08-13 09:40:54 +0200
+
+
+Started DELETE "/games/3" for 127.0.0.1 at 2015-08-13 09:41:24 +0200
+Processing by GamesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"aFXVXNcKN2IMYv1ocYbAh1xu91N5jrgjTsmra7jfSowOG99p0LnDDftdKspzYr6YYueVGak/smcYYH/m2p4iqA==", "id"=>"3"}
+  [1m[36mGame Load (0.1ms)[0m  [1mSELECT  "games".* FROM "games" WHERE "games"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mDELETE FROM "games" WHERE "games"."id" = ?[0m  [["id", 3]]
+  [1m[35m (161.3ms)[0m  commit transaction
+Redirected to http://localhost:9000/games
+Completed 302 Found in 164ms (ActiveRecord: 161.7ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2015-08-13 09:41:25 +0200
+Processing by GamesController#index as HTML
+  Rendered games/_grid_top.html.erb (0.0ms)
+  [1m[36mGame Load (0.2ms)[0m  [1mSELECT "games".* FROM "games"[0m
+  Rendered games/_grid_bottom.html.erb (0.0ms)
+  Rendered games/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 98ms (Views: 96.9ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/games/4" for 127.0.0.1 at 2015-08-13 09:41:28 +0200
+Processing by GamesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"cg7h6qDYLauXiNcYqxSVUUKml9ORoQf5pA6ZrwQThsQUQOvfp2vZxGC3ALqp8OtOfC/1mUEQDb3yp00iZlLu4A==", "id"=>"4"}
+  [1m[35mGame Load (0.1ms)[0m  SELECT  "games".* FROM "games" WHERE "games"."id" = ? LIMIT 1  [["id", 4]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "games" WHERE "games"."id" = ?  [["id", 4]]
+  [1m[36m (157.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:9000/games
+Completed 302 Found in 161ms (ActiveRecord: 158.2ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2015-08-13 09:41:28 +0200
+Processing by GamesController#index as HTML
+  Rendered games/_grid_top.html.erb (0.0ms)
+  [1m[35mGame Load (0.2ms)[0m  SELECT "games".* FROM "games"
+  Rendered games/_grid_bottom.html.erb (0.0ms)
+  Rendered games/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 32ms (Views: 31.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/games" for 127.0.0.1 at 2015-08-13 09:49:23 +0200
+Processing by GamesController#index as HTML
+  Rendered games/_grid_top.html.erb (0.0ms)
+  [1m[36mGame Load (0.2ms)[0m  [1mSELECT "games".* FROM "games"[0m
+  Rendered games/_grid_bottom.html.erb (0.0ms)
+  Rendered games/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 33ms (Views: 32.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/games.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-13 09:49:23 +0200
+
+
+Started GET "/assets/pure-min.self-14a0bf50d79b71bda42dbea54331d1033d51e4bef2b915256faec6a523ae78fb.css?body=1" for 127.0.0.1 at 2015-08-13 09:49:24 +0200
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-13 09:49:24 +0200
+
+
+Started GET "/assets/application.self-b38bd405e490a2cd172f8413ed56e8a5218b9d6a5aca188e5b0c096730c92712.css?body=1" for 127.0.0.1 at 2015-08-13 09:49:24 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-13 09:49:24 +0200
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-13 09:49:24 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-13 09:49:24 +0200
+
+
+Started GET "/assets/games.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-13 09:49:24 +0200
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-13 09:49:24 +0200
+
+
+Started GET "/assets/sorttable.self-a06cc09bf6dd393ffa8552e3343022e4523dc5f7e87dddef93fd0fa9cf7c7776.js?body=1" for 127.0.0.1 at 2015-08-13 09:49:24 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-08-13 09:49:24 +0200
+
+
+Started GET "/games" for 127.0.0.1 at 2015-08-13 09:49:25 +0200
+Processing by GamesController#index as HTML
+  Rendered games/_grid_top.html.erb (0.0ms)
+  [1m[35mGame Load (0.2ms)[0m  SELECT "games".* FROM "games"
+  Rendered games/_grid_bottom.html.erb (0.0ms)
+  Rendered games/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 30ms (Views: 29.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/games.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-13 09:49:25 +0200
+
+
+Started GET "/assets/pure-min.self-14a0bf50d79b71bda42dbea54331d1033d51e4bef2b915256faec6a523ae78fb.css?body=1" for 127.0.0.1 at 2015-08-13 09:49:25 +0200
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-13 09:49:25 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-13 09:49:25 +0200
+
+
+Started GET "/assets/application.self-b38bd405e490a2cd172f8413ed56e8a5218b9d6a5aca188e5b0c096730c92712.css?body=1" for 127.0.0.1 at 2015-08-13 09:49:25 +0200
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-13 09:49:25 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-13 09:49:25 +0200
+
+
+Started GET "/assets/games.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-13 09:49:25 +0200
+
+
+Started GET "/assets/sorttable.self-a06cc09bf6dd393ffa8552e3343022e4523dc5f7e87dddef93fd0fa9cf7c7776.js?body=1" for 127.0.0.1 at 2015-08-13 09:49:25 +0200
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-13 09:49:25 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-08-13 09:49:25 +0200
+
+
+Started GET "/games/new" for 127.0.0.1 at 2015-08-13 09:49:32 +0200
+Processing by GamesController#new as HTML
+  Rendered games/_grid_top.html.erb (0.0ms)
+  Rendered games/_form.html.erb (2.5ms)
+  Rendered games/_grid_bottom.html.erb (0.0ms)
+  Rendered games/new.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 107ms (Views: 106.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/games/new" for 127.0.0.1 at 2015-08-13 09:50:18 +0200
+Processing by GamesController#new as HTML
+  Rendered games/_grid_top.html.erb (0.0ms)
+  Rendered games/_form.html.erb (2.9ms)
+  Rendered games/_grid_bottom.html.erb (0.0ms)
+  Rendered games/new.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 40ms (Views: 31.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/games.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-13 09:50:18 +0200
+
+
+Started GET "/assets/pure-min.self-14a0bf50d79b71bda42dbea54331d1033d51e4bef2b915256faec6a523ae78fb.css?body=1" for 127.0.0.1 at 2015-08-13 09:50:18 +0200
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-13 09:50:18 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-13 09:50:18 +0200
+
+
+Started GET "/assets/application.self-b38bd405e490a2cd172f8413ed56e8a5218b9d6a5aca188e5b0c096730c92712.css?body=1" for 127.0.0.1 at 2015-08-13 09:50:18 +0200
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-13 09:50:18 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-13 09:50:18 +0200
+
+
+Started GET "/assets/games.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-13 09:50:18 +0200
+
+
+Started GET "/assets/sorttable.self-a06cc09bf6dd393ffa8552e3343022e4523dc5f7e87dddef93fd0fa9cf7c7776.js?body=1" for 127.0.0.1 at 2015-08-13 09:50:18 +0200
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-13 09:50:18 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-08-13 09:50:18 +0200
+
+
+Started GET "/games/new" for 127.0.0.1 at 2015-08-13 09:52:54 +0200
+Processing by GamesController#new as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/home/tengblad/workspace/rails/lending_library/app/models/game.rb:3: syntax error, unexpected keyword_end):
+  app/models/game.rb:3: syntax error, unexpected keyword_end
+  app/controllers/games_controller.rb:11:in `new'
+
+
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.1ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /var/lib/gems/1.9.1/gems/actionpack-4.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (21.7ms)
+  Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.2ms)
+  Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (10.5ms)
+  Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /var/lib/gems/1.9.1/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (21.8ms)
+
+
+Started GET "/games/new" for 127.0.0.1 at 2015-08-13 09:53:05 +0200
+Processing by GamesController#new as HTML
+  Rendered games/_grid_top.html.erb (0.0ms)
+  Rendered games/_form.html.erb (2.2ms)
+  Rendered games/_grid_bottom.html.erb (0.0ms)
+  Rendered games/new.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 39ms (Views: 30.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/games.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-13 09:53:05 +0200
+
+
+Started GET "/assets/pure-min.self-14a0bf50d79b71bda42dbea54331d1033d51e4bef2b915256faec6a523ae78fb.css?body=1" for 127.0.0.1 at 2015-08-13 09:53:05 +0200
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 127.0.0.1 at 2015-08-13 09:53:05 +0200
+
+
+Started GET "/assets/application.self-b38bd405e490a2cd172f8413ed56e8a5218b9d6a5aca188e5b0c096730c92712.css?body=1" for 127.0.0.1 at 2015-08-13 09:53:05 +0200
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-08-13 09:53:05 +0200
+
+
+Started GET "/assets/jquery_ujs.self-ca5248a2fad13d6bd58ea121318d642f195f0b2dd818b30615f785ff365e8d1f.js?body=1" for 127.0.0.1 at 2015-08-13 09:53:05 +0200
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-08-13 09:53:05 +0200
+
+
+Started GET "/assets/games.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-13 09:53:05 +0200
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-08-13 09:53:05 +0200
+
+
+Started GET "/assets/sorttable.self-a06cc09bf6dd393ffa8552e3343022e4523dc5f7e87dddef93fd0fa9cf7c7776.js?body=1" for 127.0.0.1 at 2015-08-13 09:53:05 +0200
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 127.0.0.1 at 2015-08-13 09:53:05 +0200
+
+
+Started POST "/games" for 127.0.0.1 at 2015-08-13 09:53:07 +0200
+Processing by GamesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JueIOzVChKxf9ofLEOprBj/Ds9ESd6YZGBIHtJDSSetAqYIOMvFww6jJUGkSDhUZAUrRm8LGrF1Ou9M58pMhzw==", "game"=>{"number"=>"", "title"=>"", "weight"=>"", "owner"=>"", "borrower"=>""}, "commit"=>"Submit"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  rollback transaction
+  Rendered games/_grid_top.html.erb (0.0ms)
+  Rendered games/_form.html.erb (4.2ms)
+  Rendered games/_grid_bottom.html.erb (0.0ms)
+  Rendered games/new.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 37ms (Views: 32.5ms | ActiveRecord: 0.1ms)
