@@ -1,3 +1,3 @@
 class Game < ActiveRecord::Base
-    validates :title, :number, :weight, :owner,  presence: true
+   validates :title, :number, :owner, presence: true
 end

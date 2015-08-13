@@ -5,6 +5,7 @@ class GamesController < ApplicationController
 
   def show
     @game = Game.find(params[:id])
+    #render 'index'
   end
 
   def new

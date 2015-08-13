@@ -14,6 +14,12 @@ gem 'coffee-rails', '~> 4.1.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
+# Add Best in place
+gem 'best_in_place'
+
+# Add Editable 
+#gem 'bootstrap-editable-rails'
+
 # Add PureCSS rails
 gem "pure-css-rails"
 

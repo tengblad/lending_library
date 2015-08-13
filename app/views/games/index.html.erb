@@ -5,34 +5,38 @@
 <p>
 <table class="pure-table sortable">
   <thead>
-      <tr>
+    <tr>
       <th>Number</th>
       <th>Title</th>
       <th>Weight</th>
       <th>Owner</th>
+      <th>Borrowed</th>
       <th>Borrowed by</th>
       <th class="sorttable_nosort">Action</th>
     </tr>
   </thead>
 
   <tbody>
-      <% @games.each do |game| %>
-          <tr>
-          <td><%= game.number %></td>
-          <td><%= game.title %></td>
-                    <td><%= game.weight %></td>
-                    <td><%= game.owner %></td>
-                    <td><%= game.borrower %></td>
-                          <td><%= link_to 'Show', game_path(game) %> |
-                        <%= link_to 'Edit', edit_game_path(game) %> |
-                          <%= link_to 'Destroy', game_path(game),
-                                         method: :delete,
-                                         data: { confirm: 'Are you sure?' } %></td>
-                        </tr>
-      <% end %>
-    </tbody>
-  </table>
-  </p>
+  <% @games.each do |game| %>
+    <tr>
+    <td><%= best_in_place game, :number %></td>
+    <td><%= best_in_place game, :title %></td>
+    <td><%= best_in_place game, :weight %></td>
+    <td><%= best_in_place game, :owner %></td>
+    <td><%= best_in_place game, :borrowed, as: :checkbox, collection: {false: "No", true: "Yes"} %></td>
+    <td><%= best_in_place game, :borrower %></td>
+
+
+    <td><%= link_to 'Show', game_path(game) %> |
+      <%= link_to 'Edit', edit_game_path(game) %> |
+      <%= link_to 'Destroy', game_path(game),
+      method: :delete,
+      data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+  </tbody>
+</table>
+</p>
 </div>
 
 <%= render 'grid_bottom' =%>

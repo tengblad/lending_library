@@ -11,9 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150813070902) do
+ActiveRecord::Schema.define(version: 20150813111028) do
 
-# Could not dump table "games" because of following NoMethodError
-#   undefined method `[]' for nil:NilClass
+  create_table "games", force: :cascade do |t|
+    t.integer  "number"
+    t.string   "title"
+    t.integer  "weight"
+    t.string   "owner"
+    t.string   "borrower"
+    t.boolean  "borrowed",   default: false
+    t.datetime "created_at",                 null: false
+    t.datetime "updated_at",                 null: false
+  end
 
 end

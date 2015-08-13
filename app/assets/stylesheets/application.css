@@ -18,7 +18,7 @@ table.sortable th:not(.sorttable_sorted):not(.sorttable_sorted_reverse):not(.sor
 }
 
 table.sortable tbody tr:nth-child(2n) td {
-  background: #ffcccc;
+  background: #EEEEEE;
 }
 table.sortable tbody tr:nth-child(2n+1) td {
   background: #ccfffff;

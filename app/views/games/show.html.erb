@@ -1,3 +1,5 @@
+<%= render 'grid_top' =%>
+
 <p>
 <strong>Number:</strong>
 <%= @game.number %>
@@ -17,6 +19,7 @@
 <strong>Owner:</strong>
 <%= @game.owner %>
 </p>
-<%= link_to 'Edit', edit_game_path(@game) %> |
-    <%= link_to 'Back', games_path %>
 
+<%= link_to 'New game', new_game_path, :class => "pure-button pure-button-primary"  %> <%= link_to 'Edit game', edit_game_path, :class => "pure-button pure-button-primary"  %> <%= link_to 'Back to list', games_path, :class => "pure-button pure-button-primary"  %>
+
+<%= render 'grid_bottom' =%>
