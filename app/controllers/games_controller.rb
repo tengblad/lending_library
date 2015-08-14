@@ -26,24 +26,36 @@ class GamesController < ApplicationController
     end
   end
 
+  #  def update
+  #    @game = Game.find(params[:id])
+  #
+  #    if @game.update(game_params)
+  #      redirect_to @game
+  #    else
+  #      render 'edit'
+  #    end
+  #  end
+
+
   def update
     @game = Game.find(params[:id])
-
-    if @game.update(game_params)
-      redirect_to @game
-    else
-      render 'edit'
+    @game.update_attributes game_params
+  #  p @game.changed
+  #  p @game.changes
+    respond_to do |format|
+      format.html { redirect_to @game }
+      format.json { render json: {status: "ok"} }
     end
   end
 
-def destroy
+  def destroy
     @game = Game.find(params[:id])
-      @game.destroy
-       
-        redirect_to games_path
-        end
+    @game.destroy
 
-private
+    redirect_to games_path
+  end
+
+  private
   def game_params
     params.require(:game).permit(:number, :title, :weight, :owner, :borrower, :borrowed)
   end

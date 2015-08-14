@@ -11,17 +11,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150813111028) do
+ActiveRecord::Schema.define(version: 20150814150025) do
 
   create_table "games", force: :cascade do |t|
     t.integer  "number"
     t.string   "title"
-    t.integer  "weight"
+    t.integer  "weight",     default: 0
     t.string   "owner"
-    t.string   "borrower"
+    t.string   "borrower",   default: "-"
     t.boolean  "borrowed",   default: false
     t.datetime "created_at",                 null: false
     t.datetime "updated_at",                 null: false
   end
+
+  add_index "games", ["number"], name: "index_games_on_number", unique: true
 
 end

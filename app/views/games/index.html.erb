@@ -6,12 +6,12 @@
 <table class="pure-table sortable">
   <thead>
     <tr>
-      <th>Number</th>
-      <th>Title</th>
-      <th>Weight</th>
-      <th>Owner</th>
-      <th>Borrowed</th>
-      <th>Borrowed by</th>
+      <th width="110px">Number</th>
+      <th width="300px" >Title</th>
+      <th width="110px">Weight</th>
+      <th width="110px">Owner</th>
+      <th class="sorttable_nosort" width="120px">Borrowed</th>
+      <th width="140px">Borrowed by</th>
       <th class="sorttable_nosort">Action</th>
     </tr>
   </thead>
@@ -23,7 +23,7 @@
       <td><%= best_in_place game, :title , :inner_class => "input_title" %></td>
       <td><%= best_in_place game, :weight, :inner_class => "input_weight" %></td>
       <td><%= best_in_place game, :owner, :inner_class => "input_owner" %></td>
-    <td><%= best_in_place game, :borrowed, as: :checkbox, collection: {false: "No", true: "Yes"} %></td>
+      <td><%= best_in_place game, :borrowed, as: :checkbox, collection: {false: "Nope", true: "Yep"} %></td>
     <td><%= best_in_place game, :borrower, :inner_class => "input_borrower" %></td>
 
 
