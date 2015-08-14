@@ -1,0 +1,58 @@
+[ 2015-08-14 19:25:59.5007 12466/7f6c302ba780 age/Wat/Main.cpp:1274 ]: Starting Passenger watchdog...
+[ 2015-08-14 19:25:59.5054 12469/7f5ecfcae780 age/Cor/Main.cpp:957 ]: Starting Passenger core...
+[ 2015-08-14 19:25:59.5055 12469/7f5ecfcae780 age/Cor/Main.cpp:234 ]: Passenger core running in multi-application mode.
+[ 2015-08-14 19:25:59.5072 12469/7f5ecfcae780 age/Cor/Main.cpp:707 ]: Passenger core online, PID 12469
+[ 2015-08-14 19:25:59.5131 12477/7fb1988ed780 age/Ust/Main.cpp:430 ]: Starting Passenger UstRouter...
+[ 2015-08-14 19:25:59.5134 12477/7fb1988ed780 age/Ust/Main.cpp:311 ]: Passenger UstRouter online, PID 12477
+App 12511 stdout: 
+App 12529 stdout: 
+App 12539 stdout: 
+App 12548 stdout: 
+[ 2015-08-14 19:31:09.4926 12469/7f5ecfc6b700 age/Cor/Main.cpp:794 ]: Disconnecting long-running connections for process 12539, application /home/tengblad/workspace/rails/lending_library/public (development)
+[ 2015-08-14 19:31:09.9229 12469/7f5ecfc6b700 age/Cor/Main.cpp:794 ]: Disconnecting long-running connections for process 12529, application /home/tengblad/workspace/rails/lending_library/public (development)
+App 19885 stdout: 
+App 19916 stdout: 
+[ 2015-08-14 19:39:41.9574 12469/7f5ecfc6b700 age/Cor/Main.cpp:794 ]: Disconnecting long-running connections for process 12548, application /home/tengblad/workspace/rails/lending_library/public (development)
+App 4140 stdout: 
+App 4172 stdout: 
+[ 2015-08-14 19:56:12.7540 12469/7f5ecfc6b700 age/Cor/Main.cpp:794 ]: Disconnecting long-running connections for process 4172, application /home/tengblad/workspace/rails/lending_library/public (development)
+App 4905 stdout: 
+App 4927 stdout: 
+[ 2015-08-14 20:18:44.4101 12469/7f5ecfc6b700 age/Cor/Main.cpp:794 ]: Disconnecting long-running connections for process 19916, application /home/tengblad/workspace/rails/lending_library/public (development)
+App 5129 stdout: 
+App 5151 stdout: 
+[ 2015-08-14 20:25:01.2189 12469/7f5ecfc6b700 age/Cor/Main.cpp:794 ]: Disconnecting long-running connections for process 5151, application /home/tengblad/workspace/rails/lending_library/public (development)
+App 5345 stdout: 
+App 5365 stdout: 
+[ 2015-08-14 20:30:27.5302 12469/7f5ecfc6b700 age/Cor/Main.cpp:794 ]: Disconnecting long-running connections for process 5365, application /home/tengblad/workspace/rails/lending_library/public (development)
+App 5767 stdout: 
+App 5786 stdout: 
+App 5859 stdout: 
+App 5873 stdout: 
+App 5881 stdout: 
+App 5950 stdout: 
+[ 2015-08-14 20:48:37.5748 12469/7f5ecfc6b700 age/Cor/Main.cpp:794 ]: Disconnecting long-running connections for process 5786, application /home/tengblad/workspace/rails/lending_library/public (development)
+[ 2015-08-14 20:48:37.5749 12469/7f5ecfc6b700 age/Cor/Main.cpp:794 ]: Disconnecting long-running connections for process 5950, application /home/tengblad/workspace/rails/lending_library/public (development)
+[ 2015-08-14 20:48:37.5927 12469/7f5ecfc6b700 age/Cor/Main.cpp:794 ]: Disconnecting long-running connections for process 5881, application /home/tengblad/workspace/rails/lending_library/public (development)
+[ 2015-08-14 20:48:37.6203 12469/7f5ecfc6b700 age/Cor/Main.cpp:794 ]: Disconnecting long-running connections for process 5859, application /home/tengblad/workspace/rails/lending_library/public (development)
+[ 2015-08-14 20:48:37.6362 12469/7f5ecfc6b700 age/Cor/Main.cpp:794 ]: Disconnecting long-running connections for process 5873, application /home/tengblad/workspace/rails/lending_library/public (development)
+App 6719 stdout: 
+App 6741 stdout: 
+[ 2015-08-14 21:07:53.5934 12469/7f5ecfc6b700 age/Cor/Main.cpp:794 ]: Disconnecting long-running connections for process 4927, application /home/tengblad/workspace/rails/lending_library/public (development)
+App 6968 stdout: 
+App 6989 stdout: 
+[ 2015-08-14 21:14:35.5070 12469/7f5ecfc6b700 age/Cor/Main.cpp:794 ]: Disconnecting long-running connections for process 6989, application /home/tengblad/workspace/rails/lending_library/public (development)
+App 7326 stdout: 
+App 7348 stdout: 
+[ 2015-08-14 21:24:53.2780 12469/7f5ecfc6b700 age/Cor/Main.cpp:794 ]: Disconnecting long-running connections for process 6741, application /home/tengblad/workspace/rails/lending_library/public (development)
+App 8729 stdout: 
+App 8750 stdout: 
+App 9066 stdout: 
+App 9184 stdout: 
+App 9229 stdout: 
+App 9327 stdout: 
+[ 2015-08-14 22:15:00.5164 12469/7f5ecfc6b700 age/Cor/Main.cpp:794 ]: Disconnecting long-running connections for process 8750, application /home/tengblad/workspace/rails/lending_library/public (development)
+[ 2015-08-14 22:15:00.5165 12469/7f5ecfc6b700 age/Cor/Main.cpp:794 ]: Disconnecting long-running connections for process 9066, application /home/tengblad/workspace/rails/lending_library/public (development)
+[ 2015-08-14 22:15:00.5166 12469/7f5ecfc6b700 age/Cor/Main.cpp:794 ]: Disconnecting long-running connections for process 9184, application /home/tengblad/workspace/rails/lending_library/public (development)
+[ 2015-08-14 22:15:00.5166 12469/7f5ecfc6b700 age/Cor/Main.cpp:794 ]: Disconnecting long-running connections for process 9327, application /home/tengblad/workspace/rails/lending_library/public (development)
+[ 2015-08-14 22:15:00.5213 12469/7f5ecfc6b700 age/Cor/Main.cpp:794 ]: Disconnecting long-running connections for process 9229, application /home/tengblad/workspace/rails/lending_library/public (development)

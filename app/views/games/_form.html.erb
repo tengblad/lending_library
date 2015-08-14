@@ -1,4 +1,4 @@
-<%= form_for @game, :html => {:class => "pure-form pure-form-stacked #{controller.action_name}_model_name"} do |f| %>
+<%= form_for @game, :html => {:class => "pure-form pure-form-aligned #{controller.action_name}_model_name"} do |f| %>
   <fieldset>
   <% if @game.errors.any? %>
     <div id="error_explanation">
@@ -41,7 +41,7 @@
   <br>
 
   <div class="pure-controls">
-    <%= f.submit 'Submit' , :class => 'pure-button pure-button-primary' %>
+    <%= f.submit 'Submit' , :class => 'pure-button pure-button-primary' %> <%= link_to 'Back', :back, :class => 'pure-button pure-button-primary' %>
   </div>
   </fieldset>
 <% end %>
