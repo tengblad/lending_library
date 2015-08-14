@@ -17,7 +17,6 @@ class GamesController < ApplicationController
   end
 
   def create
-    #@game = Game.new(params.require(:game).permit(:number, :title, :weight, :owner, :borrower))
     @game = Game.new(game_params)
 
     if @game.save

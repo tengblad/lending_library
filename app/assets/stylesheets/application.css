@@ -23,3 +23,30 @@ table.sortable tbody tr:nth-child(2n) td {
 table.sortable tbody tr:nth-child(2n+1) td {
   background: #ccfffff;
 }
+
+.input_number {
+  width: 50px;
+  background:white;
+}
+
+.input_title {
+  width: 250px;
+  background:white;
+}
+
+.input_weight {
+  width: 50px;
+  background:white;
+}
+
+.input_owner {
+  width: 70px;
+  background:white;
+}
+
+.input_borrower {
+  width: 70px;
+  background:white;
+}
+
+
